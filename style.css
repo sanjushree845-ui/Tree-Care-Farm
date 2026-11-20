@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f0;
+    color: #243b2b;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #173d2a;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b8ed9e;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #b8ed9e;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(90deg, #173d2a, #477e4c);
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #c8f5ac;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 22px 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #e1efdf;
+}
+
+/* BUTTON */
+
+.primary-btn {
+    display: inline-block;
+    background: #b7e99c;
+    color: #173d2a;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background: #d0f4b7;
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 75px 8%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+    color: #245536;
+}
+
+.section > p {
+    line-height: 1.8;
+    color: #5b6d5e;
+    margin-bottom: 25px;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.9;
+}
+
+/* PLANT SEARCH */
+
+.explore {
+    background: #e8f0e2;
+}
+
+#searchPlant {
+    width: 100%;
+    max-width: 500px;
+    padding: 14px;
+    border: 1px solid #c5d6c0;
+    border-radius: 8px;
+    margin: 15px 0 30px;
+    font-size: 16px;
+}
+
+/* PLANT GRID */
+
+.plant-grid,
+.care-grid,
+.garden-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+/* CARDS */
+
+.plant-card,
+.care-card,
+.garden-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(30, 65, 40, 0.08);
+    transition: transform 0.2s;
+}
+
+.plant-card:hover,
+.care-card:hover {
+    transform: translateY(-5px);
+}
+
+.plant-card h3,
+.care-card h3,
+.garden-card h3 {
+    color: #347447;
+    margin-bottom: 12px;
+}
+
+.plant-card p,
+.care-card p,
+.garden-card p {
+    color: #637466;
+    line-height: 1.7;
+    margin-top: 8px;
+}
+
+.plant-icon,
+.care-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.care {
+    background: #f5f8f0;
+}
+
+/* FORM */
+
+.plant-form {
+    background: white;
+    max-width: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(30, 65, 40, 0.08);
+    display: grid;
+    gap: 15px;
+}
+
+.plant-form label {
+    font-weight: bold;
+    color: #31563a;
+}
+
+.plant-form input {
+    padding: 14px;
+    border: 1px solid #ccd9c9;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 15px;
+}
+
+.plant-form input:focus,
+#searchPlant:focus {
+    outline: 2px solid #77ae78;
+}
+
+/* GARDEN */
+
+.tracker {
+    background: #e8f0e2;
+}
+
+.garden-grid {
+    margin-top: 35px;
+}
+
+.remove-btn {
+    margin-top: 18px;
+    padding: 10px 15px;
+    background: #f0dede;
+    color: #8c3030;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+    background: #173d2a;
+    color: white;
+    padding: 35px 8%;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 12px;
+    color: #c6ddc7;
+}
+
+.footer-bottom {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+}

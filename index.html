@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TreeCare Farm | Smart Plant Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">🌿 TreeCare Farm</div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#explore">Explore Plants</a>
+            <a href="#care">Plant Care</a>
+            <a href="#tracker">My Garden</a>
+        </div>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="tag">GROW GREEN • LIVE CLEAN</span>
+
+        <h1>Grow Today.<br>Protect Tomorrow.</h1>
+
+        <p>
+            Start your planting journey with smart guidance.
+            Learn how to grow, protect and care for every plant.
+        </p>
+
+        <a href="#tracker" class="primary-btn">Start Your Garden 🌱</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section">
+    <h2>Welcome to TreeCare Farm</h2>
+
+    <p>
+        TreeCare Farm helps people grow healthy plants through
+        simple care instructions, plant information and growth tracking.
+        From choosing a seed to caring for a tree, your green journey
+        starts here.
+    </p>
+</section>
+
+<!-- EXPLORE PLANTS -->
+<section class="explore section" id="explore">
+    <h2>Explore Plants 🌿</h2>
+    <p>Discover plants and learn their basic care needs.</p>
+
+    <input
+        type="text"
+        id="searchPlant"
+        placeholder="Search plants..."
+    >
+
+    <div class="plant-grid" id="plantGrid"></div>
+</section>
+
+<!-- PLANT CARE -->
+<section class="care section" id="care">
+    <h2>Essential Plant Care</h2>
+
+    <div class="care-grid">
+
+        <div class="care-card">
+            <div class="care-icon">💧</div>
+            <h3>Watering</h3>
+            <p>
+                Check the soil before watering.
+                Avoid keeping the soil excessively wet.
+            </p>
+        </div>
+
+        <div class="care-card">
+            <div class="care-icon">☀️</div>
+            <h3>Sunlight</h3>
+            <p>
+                Understand your plant's sunlight requirements
+                and choose a suitable location.
+            </p>
+        </div>
+
+        <div class="care-card">
+            <div class="care-icon">🌱</div>
+            <h3>Soil</h3>
+            <p>
+                Use suitable soil with good drainage
+                based on your plant's needs.
+            </p>
+        </div>
+
+        <div class="care-card">
+            <div class="care-icon">🌳</div>
+            <h3>Growth</h3>
+            <p>
+                Observe your plant regularly and
+                record its growth progress.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ADD PLANT -->
+<section class="tracker section" id="tracker">
+    <h2>🌱 My Garden Tracker</h2>
+
+    <p>Add your plant and start recording your planting journey.</p>
+
+    <form id="plantForm" class="plant-form">
+
+        <label for="plantName">Plant Name</label>
+        <input
+            type="text"
+            id="plantName"
+            placeholder="e.g. Neem"
+            required
+        >
+
+        <label for="plantType">Plant Species / Type</label>
+        <input
+            type="text"
+            id="plantType"
+            placeholder="e.g. Azadirachta indica"
+            required
+        >
+
+        <label for="plantDate">Planting Date</label>
+        <input
+            type="date"
+            id="plantDate"
+            required
+        >
+
+        <label for="plantLocation">Location</label>
+        <input
+            type="text"
+            id="plantLocation"
+            placeholder="e.g. Home garden"
+        >
+
+        <button type="submit" class="primary-btn">
+            Add My Plant 🌿
+        </button>
+    </form>
+
+    <div class="garden-grid" id="gardenList"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>🌿 TreeCare Farm</h3>
+    <p>Growing a greener future, one plant at a time.</p>
+    <p class="footer-bottom">© 2026 TreeCare Farm</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
